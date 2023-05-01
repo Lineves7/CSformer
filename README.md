@@ -3,4 +3,4 @@ Official Pytorch implementation of "CSformer: Bridging Convolution and Transform
 
 ## Codes
 
-The codes and results will be release soon.
+The codes and results will be released soon.
