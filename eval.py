@@ -57,8 +57,10 @@ def main():
         logger.info(f'=> loaded checkpoint {checkpoint_file}')
         print(f'=> loaded checkpoint {checkpoint_file}')
 
-    test(args,gen_net,logger)
-    # test_overlap(args,gen_net,logger)
+    if args.overlap == True:
+        test_overlap(args,gen_net,logger)
+    else:
+        test(args,gen_net,logger)
 
 
 if __name__ == '__main__':
