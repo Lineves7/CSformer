@@ -9,7 +9,7 @@ Dongjie Ye, [Zhangkai Ni](https://eezkni.github.io/), [Hanli Wang](https://mic.t
 ## Testing (Running pretrained models)
 - Checkpoint
 
-Checkpoints can be found from [Google Drive](https://drive.google.com/file/d/1P_HKhmTsYi2H94VMY1TcIU5Ze6H_mIq0/view?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1o7Cs9OLjy63PLydgFmQ_qw?pwd=fr6m)(提取码：fr6m). 
+Checkpoints can be found from [Google Drive](https://drive.google.com/file/d/1P_HKhmTsYi2H94VMY1TcIU5Ze6H_mIq0/view?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1o7Cs9OLjy63PLydgFmQ_qw?pwd=fr6m) (提取码：fr6m). 
 
 - Inference
 1. Unzip the checkpoint file and place all the files in the ./logs/checkpoint_coco/ directory.
