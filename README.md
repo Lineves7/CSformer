@@ -27,7 +27,7 @@ Checkpoints can be found from [Google Drive](https://drive.google.com/file/d/1P_
 ## Training (Coming Soon)
 
 ## Citation
-If this code/UEGAN is useful for your research, please cite our paper:
+If this code is useful for your research, please cite our paper:
 
 ```
 @article{csformer,
