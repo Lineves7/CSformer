@@ -9,20 +9,22 @@ Dongjie Ye, [Zhangkai Ni](https://eezkni.github.io/), [Hanli Wang](https://mic.t
 ## Testing (Running pretrained models)
 - Checkpoint
 
-Checkpoints can be found from [Google Drive](https://drive.google.com/file/d/1P_HKhmTsYi2H94VMY1TcIU5Ze6H_mIq0/view?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1o7Cs9OLjy63PLydgFmQ_qw?pwd=fr6m) (提取码：fr6m). 
+Checkpoints trained on CoCo dataset can be found from [Google Drive](https://drive.google.com/file/d/1P_HKhmTsYi2H94VMY1TcIU5Ze6H_mIq0/view?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1o7Cs9OLjy63PLydgFmQ_qw?pwd=fr6m) (提取码：fr6m). 
+
+Checkpoints trained on BSD400 dataset can be found from [Google Drive](https://drive.google.com/file/d/1b8mbNcD7zbv5XC2oXJ8VStPoMqqS4g5s/view?usp=sharing) or [Baidu Netdisk](https://pan.baidu.com/s/1S2VHdv1WKUo6jyGHLPi1FQ?pwd=9lmz) (提取码：9lmz). 
 
 - Inference
-1. Unzip the checkpoint file and place all the files in the ./logs/checkpoint_coco/ directory.
+1. Unzip the checkpoint file and place all the files in the ./logs/checkpoint_coco/ or ./logs/checkpoint_bsd400/ directory.
 2. Edit the ./cfg.py file to modify the [--testdata_path] by specifying the path to your test datasets.
 3. Excute the test script below:
     ```
-    python eval.py --cs_ratio 1 --exp_name test_CS1 --load_path ./logs/checkpoint_coco/checkpoint_CS1.pth --overlap --overlapstep 8
+    python eval.py --cs_ratio 1 --exp_name coco_test_CS1 --load_path ./logs/checkpoint_coco/checkpoint_CS1.pth --overlap --overlapstep 8
     ```
    (The available options for [cs_ratio] in our pre-trained model are 1, 4, 10, 25, and 50.)
       
     If you want to test the model wihtout overlapping, you may run the script below:
     ```
-    python eval.py --cs_ratio 1 --exp_name test_CS1 --load_path ./logs/checkpoint_coco/checkpoint_CS1.pth
+    python eval.py --cs_ratio 1 --exp_name coco_test_CS1 --load_path ./logs/checkpoint_coco/checkpoint_CS1.pth
     ```
 ## Training (Coming Soon)
 
