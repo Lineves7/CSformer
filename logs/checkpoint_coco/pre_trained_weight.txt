@@ -1,1 +1,4 @@
-Please download the pre-trained weight from https://drive.google.com/file/d/1P_HKhmTsYi2H94VMY1TcIU5Ze6H_mIq0/view?usp=sharing or 链接：https://pan.baidu.com/s/1S2VHdv1WKUo6jyGHLPi1FQ?pwd=9lmz 提取码：9lmz
+Please download the pre-trained weight from :
+https://drive.google.com/file/d/1P_HKhmTsYi2H94VMY1TcIU5Ze6H_mIq0/view?usp=sharing 
+or 
+链接：https://pan.baidu.com/s/1S2VHdv1WKUo6jyGHLPi1FQ?pwd=9lmz 提取码：9lmz
