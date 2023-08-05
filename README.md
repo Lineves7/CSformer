@@ -26,8 +26,15 @@ Checkpoints trained on BSD400 dataset can be found from [Google Drive](https://d
     ```
     python eval.py --cs_ratio 1 --exp_name coco_test_CS1 --load_path ./logs/checkpoint_coco/checkpoint_CS1.pth
     ```
-## Training (Coming Soon)
-
+## Training (Training from scratch)
+1. Prepare the training dataset.
+2. Edit the train_script.sh file to modify your python path and the [--data_path], [--dataset] by specifying the path to your training datasets.
+3. Excute the training script below:
+    ```
+    sh train_script.sh
+    ```
+4. Find the trained weight in the ./logs/[env]/Model/ folder.
+   
 ## Citation
 If this code is useful for your research, please cite our paper:
 
