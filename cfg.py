@@ -6,6 +6,12 @@ def parse_args():
 
     # train
     parser.add_argument(
+        '-gen_bs',
+        '--gen_batch_size',
+        type=int,
+        default=10,
+        help='size of the batches')
+    parser.add_argument(
         '--max_epoch',
         type=int,
         default=200,
@@ -42,7 +48,7 @@ def parse_args():
     parser.add_argument(
         '--val_freq',
         type=int,
-        default=20,
+        default=1,
         help='interval between each validation')
 
     parser.add_argument(
@@ -55,7 +61,7 @@ def parse_args():
         type=str,
         default="D:\database\package\coco\\unlabeled2017",
         help='The path of data set')
-    parser.add_argument('--init_type', type=str, default='normal',
+    parser.add_argument('--init_type', type=str, default='xavier_uniform',
                         choices=['normal', 'orth', 'xavier_uniform', 'false'],
                         help='The init type')
     parser.add_argument('--optimizer', type=str, default="adam",
@@ -80,6 +86,11 @@ def parse_args():
     parser.add_argument('--datarange', type=str, default='-11',
                         help='input data norm to range')
     parser.add_argument('--torch_vision', action='store_true', default=False, help='Show intermediate results in tensorbard dir')
+    parser.add_argument(
+        '--print_freq',
+        type=int,
+        default=100,
+        help='interval between each verbose')
 
     #test
     parser.add_argument(
@@ -88,6 +99,11 @@ def parse_args():
         default=[r'C:\dataset\data\Set11'],
         # default=['D:\database\dataset\\Urban100','C:\dataset\data\Set11','D:\database\dataset\BSD68','D:\database\dataset\Set14','D:\database\dataset\Set5\data'],
         help='The path of data set')
+    parser.add_argument(
+        '--valdata_path',
+        type=str,
+        default='C:\dataset\data\Set11',
+        help='The path of val set')
     parser.add_argument('--eval_batch_size', type=int, default=400)
     parser.add_argument('--overlap',  action='store_true',help='overlap or not during testing')
     parser.add_argument('--overlapstep',type=int,default=8,help='the overlap step for testing')
@@ -108,7 +124,7 @@ def parse_args():
         default=64,
         help='output size')
     parser.add_argument('--gf_dim', type=int, default=128,
-                        help='The base channel num of gen')
+                        help='The base channel num of model')
 
     parser.add_argument('--g_depth', type=str, default="5,5,5,5",
                         help='Generator Depth')
