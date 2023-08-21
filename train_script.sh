@@ -1,6 +1,6 @@
 C:/Anaconda3/envs/pytorch_17/python train.py \
 --gen_model CSformer \
---exp_name coco_cs4\
+--exp_name coco_cs4 \
 --cs_ratio 4 \
 --img_size 64 \
 --bottom_width 8 \
@@ -22,7 +22,7 @@ C:/Anaconda3/envs/pytorch_17/python train.py \
 --train_patch_size 128 \
 --rec_loss_type l2 \
 --dataset coco \
---data_path D:\database\package\coco\\unlabeled2017
+--data_path D:/database/package/coco/unlabeled2017
 # --dataset BSD400 \
 # --data_path C:/dataset/data/BSD400
 
